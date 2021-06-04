@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="app">
+        <h-p></h-p>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="Personaje.js"></script>
+    <script src="HP.js"></script>
+
+    <script>
+        let vm = new Vue({
+
+            el:'#app',
+
+            data(){
+                return{
+                    titulo:'vaya adaptaciones mas malas',
+                }
+            },
+
+            components: {
+                HP,
+            }
+        })
+
+
+    </script>
+</body>
+</html>
